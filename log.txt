@@ -1,0 +1,77 @@
+[(0) andrew@notrule110 ~]
+$ vue --version
+@vue/cli 5.0.4
+[(0) andrew@notrule110 ~]
+$ cd playprograms/
+[(0) andrew@notrule110 ~/playprograms]
+$ vue create vuerep2
+
+
+Vue CLI v5.0.4
+? Please pick a preset: Default ([Vue 2] babel, eslint)
+
+
+Vue CLI v5.0.4
+✨  Creating project in /home/andrew/playprograms/vuerep2.
+⚙️  Installing CLI plugins. This might take a while...
+
+yarn install v1.22.18
+info No lockfile found.
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+
+success Saved lockfile.
+Done in 12.13s.
+🚀  Invoking generators...
+📦  Installing additional dependencies...
+
+yarn install v1.22.18
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+[4/4] Building fresh packages...
+
+success Saved lockfile.
+Done in 4.52s.
+⚓  Running completion hooks...
+
+📄  Generating README.md...
+
+🎉  Successfully created project vuerep2.
+👉  Get started with the following commands:
+
+ $ cd vuerep2
+ $ yarn serve
+
+[(0) andrew@notrule110 ~/playprograms]
+$ cd vuerep2
+[(0) andrew@notrule110 ~/playprograms/vuerep2]
+$ yarn build --target lib > /dev/null
+[(0) andrew@notrule110 ~/playprograms/vuerep2]
+$ md5sum dist/*
+3fa220f7c9e624c583ca687f3401466a  dist/demo.html
+610d8ad937505a06f59920499fa164bf  dist/vuerep2.common.js
+d7d4888129f439f4ad3365f1a517cfcd  dist/vuerep2.common.js.map
+9bdc3e474a14197ae39253a6d0edf2af  dist/vuerep2.css
+af3514cbb9003385e74640d89a9879ce  dist/vuerep2.umd.js
+2480e1e67eadef80e821c507b1cbc7db  dist/vuerep2.umd.js.map
+4651078a87cc854d0ea6d1d6ac78bdde  dist/vuerep2.umd.min.js
+117d5dcedf1c528cfe301a1dd6485ce4  dist/vuerep2.umd.min.js.map
+[(0) andrew@notrule110 ~/playprograms/vuerep2]
+$ rm -rf dist
+[(0) andrew@notrule110 ~/playprograms/vuerep2]
+$ yarn build --target lib --inline-vue > /dev/null
+[(0) andrew@notrule110 ~/playprograms/vuerep2]
+$ md5sum dist/*
+3fa220f7c9e624c583ca687f3401466a  dist/demo.html
+610d8ad937505a06f59920499fa164bf  dist/vuerep2.common.js
+d7d4888129f439f4ad3365f1a517cfcd  dist/vuerep2.common.js.map
+9bdc3e474a14197ae39253a6d0edf2af  dist/vuerep2.css
+af3514cbb9003385e74640d89a9879ce  dist/vuerep2.umd.js
+2480e1e67eadef80e821c507b1cbc7db  dist/vuerep2.umd.js.map
+4651078a87cc854d0ea6d1d6ac78bdde  dist/vuerep2.umd.min.js
+117d5dcedf1c528cfe301a1dd6485ce4  dist/vuerep2.umd.min.js.map
+[(0) andrew@notrule110 ~/playprograms/vuerep2]
+$ 
+
